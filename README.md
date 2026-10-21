@@ -1,148 +1,177 @@
+# 🏨 HostelHub — Modern Role-Based Hostel Management System
 
-# 🏨 HostelHub — Modern Hostel Management System
+[![Live Demo](https://img.shields.io/badge/Live_Demo-HostelHub-blue?style=for-the-badge&logo=vercel&logoColor=white)](https://hostel-management-system-black-two.vercel.app/)
+[![API Status](https://img.shields.io/badge/API-Render-46E3B7?style=for-the-badge&logo=render&logoColor=white)](https://hostel-management-system-nip3.onrender.com/api/health)
+[![Database](https://img.shields.io/badge/MongoDB-Atlas-47A248?style=for-the-badge&logo=mongodb&logoColor=white)](https://www.mongodb.com/cloud/atlas)
+[![React 19](https://img.shields.io/badge/React-19-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://react.dev/)
+[![Node.js](https://img.shields.io/badge/Node.js-20-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)](https://nodejs.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
 
-![MERN Stack](https://img.shields.io/badge/MERN-Stack-000000?style=for-the-badge&logo=mongodb&logoColor=green)
-![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
-![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
-![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
+> **A full-stack, role-based Hostel Management System engineered to digitize accommodation administration, automate room allocations, monitor fee dues, and resolve resident complaints.**
 
-> A full-stack, role-based Hostel Management System designed to streamline administrative tasks, manage rooms, track fees, and handle student complaints efficiently.
-
----
-
-## 🚀 Live Demo
-
-| Component | URL | Status |
-|-----------|-----|--------|
-| **Frontend** | [**View Live App**](https://hostel-management-system-black-two.vercel.app/) | ![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat&logo=vercel&logoColor=white) |
-| **Backend** | [**API Health Check**](https://hostel-management-system-nip3.onrender.com/api/health) | ![Render](https://img.shields.io/badge/Render-46E3B7?style=flat&logo=render&logoColor=white) |
-
-### 🔑 Demo Credentials
-| Role | Email | Password | Access |
-|------|-------|----------|--------|
-| **Admin** | `admin@hostel.com` | `admin123` | Full access (Rooms, Students, Staff, Settings) |
-| **Warden** | `warden@hostel.com` | `warden123` | Manage Complaints, Meals, Attendance |
-| **Student** | `student1@hostel.com` | `student123` | View Profile, Pay Fees, File Complaints |
+Developed by **[Nishant Patle](https://github.com/NishantPatle06)**.
 
 ---
 
-## 📸 Screenshots
+## 🌐 Live Deployments & Demo
 
-| **Admin Dashboard** | **Room Management** |
-|---------------------|---------------------|
+| Component | Platform | Live URL | Status |
+|---|---|---|---|
+| 🖥️ **Web Application** | **Vercel** | [**hostel-management-system-black-two.vercel.app**](https://hostel-management-system-black-two.vercel.app/) | ![Active](https://img.shields.io/badge/Active-success?style=flat-square) |
+| ⚙️ **REST API Server** | **Render** | [**hostel-management-system-nip3.onrender.com/api/health**](https://hostel-management-system-nip3.onrender.com/api/health) | ![Active](https://img.shields.io/badge/Active-success?style=flat-square) |
+| 🗄️ **Database Cluster** | **MongoDB Atlas** | Cloud M0 Shared Cluster | ![Connected](https://img.shields.io/badge/Connected-success?style=flat-square) |
+
+### 🔑 Test Credentials (One-Click Demo Available on Login)
+
+| Role | Email | Password | Access & Responsibilities |
+|---|---|---|---|
+| 👑 **Admin** | `admin@hostel.com` | `admin123` | Master dashboard, Room grid allocation, Student & Staff management, Financial overview |
+| 🛡️ **Warden** | `warden@hostel.com` | `warden123` | Complaint resolution board, Weekly meal planner, Student records |
+| 🎓 **Student** | `student1@hostel.com` | `student123` | Personalized room details, Fee payment status, Maintenance complaint filing |
+
+---
+
+## 📸 Interface Preview
+
+| 👑 **Admin Analytics Dashboard** | 🏢 **Visual Room Allocation Grid** |
+|:---:|:---:|
 | ![Admin Dashboard](screenshots/admin_dashboard.png) | ![Room Management](screenshots/rooms.png) |
-| *Overview of stats & charts* | *Visual room grid & allocation* |
+| *Real-time occupancy charts, revenue & complaint stats* | *Interactive bed grid with live vacancy status* |
 
-| **Student Portal** | **Login Screen** |
-|--------------------|------------------|
+| 🎓 **Student Resident Portal** | 🔐 **Secure Authentication** |
+|:---:|:---:|
 | ![Student Portal](screenshots/student_dashboard.png) | ![Login Screen](screenshots/login.png) |
-| *Personalized student view* | *Secure authentication* |
-
-> *Note: Please add your own screenshots to the `screenshots/` folder with these filenames to populate this section!*
+| *Personalized view for room, fees & maintenance* | *JWT authenticated login with role redirection* |
 
 ---
 
-## ✨ Features
+## ✨ Key Features
 
-### 👑 Admin Dashboard
-- **Analytics**: Visual charts for occupancy rates, fee collection, and complaint status.
-- **Room Management**:
-  - Grid view of all hostel rooms.
-  - Visual indicators for availability (Green/Red).
-  - One-click allocation and deallocation.
-- **Student Management**: Full CRUD operations for student records.
-- **Staff Management**: Manage Wardens and other staff.
+### 👑 Administrator Control Center
+- **Dynamic Analytics Dashboard**: Interactive charts tracking occupancy rates, fee revenues, and complaint resolution timelines powered by **Recharts**.
+- **Visual Room & Bed Allocation**: Live color-coded room grid (Available, Partial, Occupied) with automated vacancy tracking across blocks.
+- **Student & Staff Directory**: Complete CRUD lifecycle for student enrollments and warden assignments.
+- **Financial Tracking**: Fee status oversight across pending, paid, and overdue balances.
 
-### 🛡️ Warden Panel
-- **Complaint Tracking**: View and resolve student complaints.
-- **Meal Management**: Update weekly meal schedules.
-- **Notice Board**: Post announcements for students.
+### 🛡️ Warden Operations Panel
+- **Complaint Ticket Management**: Filter, prioritize, and update student complaint states (`Pending` ➔ `In Progress` ➔ `Resolved`).
+- **Mess & Dietary Scheduling**: Create and publish weekly 4-meal schedules (Breakfast, Lunch, Snacks, Dinner).
+- **Broadcast Announcements**: Send critical hostel notices and curfew updates to all residents.
 
-### 🎓 Student Portal
-- **Profile**: View personal and room details.
-- **Fees**: Check payment status and history.
-- **Complaints**: File new complaints and track their status.
-- **Notices**: View important announcements.
+### 🎓 Student Self-Service Portal
+- **Profile & Room Details**: Instant access to assigned room number, block, and bed assignment.
+- **Fee Records**: Track payment history and upcoming installment dates.
+- **Maintenance Ticketing**: Submit categorized complaints (Electrical, Plumbing, WiFi, Hygiene) with priority flags and status tracking.
 
 ---
 
-## 🛠️ Tech Stack
+## 🛠️ Tech Stack & Architecture
 
-- **Frontend**: React 19, Vite, Tailwind CSS (via custom design system), Framer Motion (animations), Recharts (analytics), React Router v7.
-- **Backend**: Node.js, Express.js (v5), standard MVC architecture.
-- **Database**: MongoDB Atlas (Production), In-Memory MongoDB (Local Dev).
-- **Authentication**: JWT (JSON Web Tokens) with secure cookie storage.
-- **Deployment**: Vercel (Frontend), Render (Backend), MongoDB Atlas (DB).
+- **Frontend**: React 19, Vite, React Router v7, Framer Motion, Recharts, Lucide Icons, React Hot Toast
+- **Backend**: Node.js, Express.js (v5), MVC Architecture, Cookie-Parser, CORS
+- **Database**: MongoDB Atlas (Production) / Mongoose v9 / `mongodb-memory-server` (Zero-config local fallback)
+- **Security**: JWT (JSON Web Tokens), Role-Based Access Control (RBAC), bcryptjs password hashing
+- **Deployment**: Vercel (Frontend CI/CD), Render (Backend Web Service), MongoDB Atlas (Cloud Cluster)
 
 ---
 
-## 📂 Project Structure
+## 📂 Project Architecture
 
 ```bash
 hostel-management-system/
-├── client/                 # React Frontend
+├── client/                     # Frontend Application (React 19 + Vite)
 │   ├── src/
-│   │   ├── components/     # Reusable UI components
-│   │   ├── contexts/       # React Context (Auth, Theme)
-│   │   ├── pages/          # Page components (Admin, Student, Shared)
-│   │   ├── services/       # API integration (Axios)
-│   │   └── App.jsx         # Main routing configuration
-│   └── vite.config.js      # Vite configuration
+│   │   ├── components/         # Shared layouts, Navbar, Sidebar, Route Guards
+│   │   ├── contexts/           # Global AuthContext & ThemeContext
+│   │   ├── pages/
+│   │   │   ├── admin/          # Admin Dashboard, Room Grid, Student Management
+│   │   │   ├── auth/           # Login & Register views
+│   │   │   ├── shared/         # Complaints, Fees, Meal Planner, Notifications
+│   │   │   ├── student/        # Student Portal & Room view
+│   │   │   └── warden/         # Warden operational views
+│   │   ├── services/           # Axios API Client & Route Services
+│   │   └── App.jsx             # RBAC Routing & Toaster Config
+│   └── vercel.json             # Vercel Single-Page App Rewrites
 │
-└── server/                 # Node.js Backend
-    ├── config/             # DB connection
-    ├── controllers/        # Request handlers
-    ├── middleware/         # Auth & validation middleware
-    ├── models/             # Mongoose schemas
-    ├── routes/             # API routes
-    └── server.js           # Entry point
+└── server/                     # Backend Application (Node.js + Express.js)
+    ├── config/                 # MongoDB Atlas & In-Memory DB connection
+    ├── controllers/            # Controller business logic
+    ├── middleware/             # JWT auth & RBAC route authorization
+    ├── models/                 # Mongoose Schemas (User, Room, Complaint, Fee, Meal)
+    ├── routes/                 # Express API Endpoints
+    ├── utils/                  # Database Seed script for instant demo data
+    └── server.js               # Express application entry point
 ```
 
 ---
 
-## 🔧 Local Installation
+## 🔧 Local Development Setup
 
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/NishantPatle06/hostel-management-system..git
-   cd hostel-management-system
-   ```
+### 1. Clone the repository
+```bash
+git clone https://github.com/NishantPatle06/hostel-management-system..git
+cd hostel-management-system
+```
 
-2. **Install Dependencies**
-   ```bash
-   # Backend
-   cd server
-   npm install
+### 2. Backend Setup
+```bash
+cd server
+npm install
+```
 
-   # Frontend
-   cd ../client
-   npm install
-   ```
+Create a `.env` file in `server/`:
+```env
+PORT=5000
+NODE_ENV=development
+CLIENT_URL=http://localhost:5173
+JWT_SECRET=your_jwt_secret_key_here
+MONGO_URI=mongodb+srv://<username>:<password>@cluster0.mongodb.net/hostel-db
+```
+*(Note: If `MONGO_URI` is omitted, the server automatically starts an in-memory database with preloaded demo data!)*
 
-3. **Environment Setup**
-   - Create a `.env` file in `server/` (see `server/.env.example` if available, or use defaults).
-   - In development, the app uses an **In-Memory Database**, so no MongoDB URI is strictly required for local testing!
+Start backend server:
+```bash
+npm run dev
+```
 
-4. **Run the App**
-   ```bash
-   # Terminal 1 (Backend)
-   cd server
-   npm run dev
-
-   # Terminal 2 (Frontend)
-   cd client
-   npm run dev
-   ```
+### 3. Frontend Setup
+In a new terminal window:
+```bash
+cd client
+npm install
+npm run dev
+```
+Open **[http://localhost:5173](http://localhost:5173)** in your browser!
 
 ---
 
-## 📡 API Endpoints
+## 📡 REST API Reference
 
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| POST | `/api/auth/login` | Authenticate user |
-| GET | `/api/dashboard/stats` | Get admin dashboard analytics |
-| GET | `/api/rooms` | Fetch all rooms |
-| POST | `/api/complaints` | File a complaint |
-| GET | `/api/meals` | Get weekly meal plan |
+| Method | Endpoint | Description | Access |
+|---|---|---|---|
+| `POST` | `/api/auth/login` | Authenticate & issue JWT | Public |
+| `POST` | `/api/auth/register` | Register new student resident | Public |
+| `GET` | `/api/dashboard/stats` | High-level analytics & metrics | Admin |
+| `GET` | `/api/rooms` | Retrieve all rooms & vacancies | Admin / Warden / Student |
+| `PUT` | `/api/rooms/:id/allocate` | Allocate bed to student | Admin / Warden |
+| `GET` | `/api/complaints` | Fetch maintenance complaints | Admin / Warden / Student |
+| `POST` | `/api/complaints` | File a new complaint ticket | Student |
+| `PUT` | `/api/complaints/:id` | Update complaint status | Admin / Warden |
+| `GET` | `/api/meals` | Retrieve weekly mess schedule | Authenticated |
+| `GET` | `/api/fees` | View fee dues and transaction log | Admin / Student |
+| `GET` | `/api/health` | Service health check | Public |
+
+---
+
+## 👨‍💻 Author
+
+**Nishant Patle**
+- **GitHub:** [@NishantPatle06](https://github.com/NishantPatle06)
+- **Institution:** Indian Institute of Information Technology, Una (IIIT Una)
+- **Email:** 23235@iiitu.ac.in
+
+---
+
+## 📄 License
+
+This project is licensed under the [MIT License](LICENSE).

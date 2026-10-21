@@ -15,8 +15,8 @@
 
 | Component | URL | Status |
 |-----------|-----|--------|
-| **Frontend** | [**View Live App**](https://hostel-hub-rashid.vercel.app/) | ![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat&logo=vercel&logoColor=white) |
-| **Backend** | [**API Health Check**](https://hostel-management-system-f4pb.onrender.com/api/health) | ![Render](https://img.shields.io/badge/Render-46E3B7?style=flat&logo=render&logoColor=white) |
+| **Frontend** | [**View Live App**](https://hostel-management-system-black-two.vercel.app/) | ![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat&logo=vercel&logoColor=white) |
+| **Backend** | [**API Health Check**](https://hostel-management-system-nip3.onrender.com/api/health) | ![Render](https://img.shields.io/badge/Render-46E3B7?style=flat&logo=render&logoColor=white) |
 
 ### 🔑 Demo Credentials
 | Role | Email | Password | Access |
